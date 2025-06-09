@@ -7,7 +7,7 @@
 body, html {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fefefe;
+  background-color: #ffffff;
 }
 
 header {
@@ -48,11 +48,12 @@ nav a {
 
 .left-section {
   flex: 1;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  padding-right: 140px;
 }
 
 .left-section img {
@@ -63,13 +64,15 @@ nav a {
 
 .right-section {
   flex: 1;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #fff;
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+  max-width: 390px; /* Ubah dari 350px ke 400px atau lebih */
+  width: 100%;
+  margin-right: 200px;
 }
+
 
 .right-section h2 {
   margin-bottom: 10px;
@@ -85,39 +88,44 @@ nav a {
   position: relative;
 }
 
-.input-group input {
-  width: 100%;
-  padding: 12px 40px 12px 35px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.icon {
+.input-group .icon {
   position: absolute;
-  left: 10px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 40px; /* spasi kiri & kanan buat ikon */
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  font-size: 14px;
 }
 
 .toggle-password {
   position: absolute;
-  right: 10px;
+  right: 12px;
   top: 50%;
-  cursor: pointer;
   transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
 }
 
 button {
   width: 100%;
-  padding: 12px;
-  background-color: #333;
+  padding: 14px;
+  background-color: #565e6d;
   color: white;
+  font-size: 16px;
   border: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 1px;
+  font-weight: 50;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
+
 
 button:hover {
   background-color: #111;
@@ -130,8 +138,9 @@ button:hover {
 }
 
 .terms a, .signup a {
-  color: #007BFF;
+  color: #000000;
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* Tambahan untuk tampilan kecil (responsive) */
