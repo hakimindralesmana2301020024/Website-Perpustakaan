@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   color: #222;
 }
 
@@ -21,6 +21,34 @@ header {
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box {
+  padding-right: 30px; /* Memberi ruang untuk ikon */
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none; /* Ikon tidak mengganggu klik di input */
+}
+
 
 .logo img {
     height: 50px;
@@ -94,11 +122,12 @@ form input[type="date"] {
   padding-right: 30px;
 }
 
-.icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  pointer-events: none;
+.date-wrapper.pinjam {
+  margin-left: 0; /* geser ke kanan */
+}
+
+.date-wrapper.kembali {
+  margin-left: 150px; /* atau sesuaikan kalau mau digeser juga */
 }
 
 small {
@@ -135,12 +164,13 @@ button {
 .footer {
   margin-top: 60px;
   background-color: #ddd;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+  font-size: 13px;
 }
 
 .footer a {
   margin: 0 15px;
   text-decoration: none;
-  color: #007BFF;
+  color: #000000;
 }
