@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;  /*buat garis header*/
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 200px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh; /* Penuh 1 layar */
+  width: 100%;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-section img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.right-section h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.right-section p {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #111;
+}
+
+.terms, .signup {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.terms a, .signup a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Tambahan untuk tampilan kecil (responsive) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    flex: none;
+    width: 100%;
+    height: 50%;
+  }
+
+  .left-section img {
+    max-width: 80%;
+  }
+}

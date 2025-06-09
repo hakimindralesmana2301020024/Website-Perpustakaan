@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 200px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search-box {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Form */
+.form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-container h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Date input with icon */
+.date-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.date-wrapper {
+  position: relative;
+}
+
+.date-wrapper input {
+  padding-right: 30px;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+}
+
+small {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #222;
+  color: #fff;
+}
+
+.secondary {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007BFF;
+}
