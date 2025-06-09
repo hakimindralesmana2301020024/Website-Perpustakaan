@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peminjaman Buku - HOOLibrary</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="PEMINJAMAN.CSS">
 </head>
 <body>
   <header>
-        <div class="logo">
-            <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
-            <span>HOOLibrary</span>
-        </div>
-        <nav>
-            <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
-            <a href="/TENTANG/TENTANG.HTML">Tentang</a>
-            <a href="#">Layanan</a>
-        </nav>
-        <div class="search">
-            <input type="text" placeholder="Cari disini..." class="search-box">
-        </div>
-    </header>
+  <div class="logo">
+    <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
+    <span>HOOLibrary</span>
+  </div>
+
+  <div class="nav-right">
+    <nav>
+      <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
+      <a href="/TENTANG/TENTANG.HTML">Tentang</a>
+      <a href="#">Layanan</a>
+    </nav>
+    <div class="search-container">
+  <input type="text" class="search-box" placeholder="Cari disini...">
+  <i class="fa fa-search search-icon"></i>
+</div>
+  </div>
+</header>
+
 
   <main class="form-container">
     <h1>Peminjaman Buku</h1>
@@ -35,23 +41,17 @@
       <input type="text" name="id_anggota" required>
 
       <div class="date-group">
-        <div>
-          <label>Tanggal Peminjaman</label>
-          <div class="date-wrapper">
-            <input type="date" name="tanggal_pinjam" required>
-            <span class="icon">📅</span>
-          </div>
-          <small>*tanggal tidak boleh kosong</small>
-        </div>
+  <div class="date-wrapper pinjam">
+    <label for="tanggal-pinjam">Tanggal Peminjaman</label>
+    <input type="date" id="tanggal-pinjam" name="tanggal-pinjam">
+    <small>*tanggal tidak boleh kosong</small>
+  </div>
 
-        <div>
-          <label>Tanggal Pengembalian</label>
-          <div class="date-wrapper">
-            <input type="date" name="tanggal_kembali" required>
-            <span class="icon">📅</span>
-          </div>
-        </div>
-      </div>
+  <div class="date-wrapper kembali">
+    <label for="tanggal-kembali">Tanggal Pengembalian</label>
+    <input type="date" id="tanggal-kembali" name="tanggal-kembali">
+  </div>
+</div>
 
       <div class="button-group">
         <button type="button" class="secondary">Kembali</button>
