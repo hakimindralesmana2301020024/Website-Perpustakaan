@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Detail Buku</title>
-  <link rel="stylesheet" href="SINOPSIS.CSS">
+  <link rel="stylesheet" href="SINOPSIS.CSS" />
 </head>
 <body>
 
   <header>
-        <div class="logo">
-            <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
-            <span>HOOLibrary</span>
-        </div>
+      <div class="logo">
+        <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
+        <span>HOOLibrary</span>
+      </div>
+    
+      <div class="nav-search">
         <nav>
-            <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
-            <a href="/TENTANG/TENTANG.HTML">Tentang</a>
-            <a href="#">Layanan</a>
+          <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
+          <a href="/TENTANG/TENTANG.HTML">Tentang</a>
+          <a href="/INFORMASI/INFORMASI.HTML">Layanan</a>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Cari disini..." class="search-box">
+          <input type="text" placeholder="Cari disini..." class="search-box">
         </div>
+      </div>
     </header>
 
-<div class="container">
-  <div class="cover">
-    <img src="/IMG/BUKU3.png" alt="Cover Buku">
-  </div>
-
-  <div class="status-favorite">
-  <!-- Tersedia checkbox -->
-  <label class="check-toggle">
-    <input type="checkbox" id="tersedia">
-    <span class="checkmark"></span>
-    <span class="label-text">Tersedia</span>
-  </label>
-
-  <!-- Favorite love toggle -->
-  <label class="favorite-toggle">
-  <input type="checkbox" id="favorit">
-  <span class="heart-shape"></span>
-  <span>Favorit</span>
-  </label>
-
-</div>
-
-
-  <div class="info">
-    <h1>Habis Gelap Terbitlah Terang</h1>
-    <div class="meta">Armijn Pane • 2008 • Sastra, Perjuangan</div>
-    <div class="description">
-      Buku ini merupakan kumpulan surat-surat R.A. Kartini kepada sahabat di Belanda antara 1899-1904. Surat-surat ini menggambarkan perjuangan perempuan pribumi.
+  <div class="container">
+    <div class="cover">
+      <img src="/IMG/BUKU3.png" alt="Cover Buku" />
+      <div class="status">
+        ✅ <span class="text-status">Tersedia</span>
+      </div>
+      <button class="btn-favorit">🤍 Tambah ke Favorite</button>
     </div>
 
-    <a href="/PEMINJAMAN/PEMINJAMAN.HTML"><button>Peminjaman</button></a>
-    <a href="ulasan.html"><button>Ulasan</button></a>
-    <a href="mulai_baca.html"><button>Mulai Baca</button></a>
+    <div class="info">
+      <h1>Habis Gelap Terbitlah Terang</h1>
+      <div class="meta">Armijn Pane &nbsp;•&nbsp; 2008 &nbsp;•&nbsp; Sastra, Perjuangan</div>
+      <div class="description">
+        Buku <b>Habis Gelap Terbitlah Terang</b> merupakan kumpulan surat-surat R.A. Kartini
+        yang ia tulis kepada sahabat-sahabatnya di Belanda antara tahun 1899 hingga 1904.
+        Surat-surat ini menggambarkan pemikiran, perjuangan, serta keinginannya untuk
+        mengangkat derajat perempuan pribumi pada masa penjajahan Belanda.
+      </div>
+      <div class="buttons">
+        <a href="/PEMINJAMAN/PEMINJAMAN.HTML"><button>Peminjaman</button></a>
+        <a href="ulasan.html"><button>Ulasan</button></a>
+        <a href="mulai_baca.html"><button>Mulai Baca</button></a>
+      </div>
+    </div>
   </div>
-</div>
 
-<footer>
-  <a href="hubungi.html">Hubungi Kami</a> |
-  <a href="/TENTANG/TENTANG.HTML">Tentang Kami</a> |
-  <a href="privasi.html">Kebijakan Privasi</a>
-</footer>
-</body>
+  <footer class="footer">
+      <a href="/INFORMASI/INFORMASI.HTML">Hubungi Kami</a>
+      <a href="/TENTANG/TENTANG.HTML">Tentang Kami</a>
+      <a href="/INFORMASI/INFORMASI.HTML#privacy">Kebijakan Privasi</a>
+    </footer>
+  </body>
 </html>
