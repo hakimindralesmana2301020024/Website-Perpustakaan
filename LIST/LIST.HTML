@@ -3,141 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOOLibrary</title>
-  <link rel="stylesheet" href="LIST.CSS">
+  <title>HOOLibrary - Daftar Buku</title>
+  <link rel="stylesheet" href="LIST.css">
 </head>
 <body>
- <header>
-        <div class="logo">
-            <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
-            <span>HOOLibrary</span>
-        </div>
+
+  <header>
+      <div class="logo">
+        <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
+        <span>HOOLibrary</span>
+      </div>
+    
+      <div class="nav-search">
         <nav>
-            <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
-            <a href="/TENTANG/TENTANG.HTML">Tentang</a>
-            <a href="#">Layanan</a>
+          <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
+          <a href="/TENTANG/TENTANG.HTML">Tentang</a>
+          <a href="/INFORMASI/INFORMASI.HTML">Layanan</a>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Cari disini..." class="search-box">
+          <input type="text" placeholder="Cari disini..." class="search-box">
         </div>
+      </div>
     </header>
 
-  <main>
-    <!-- FAVORITE -->
-    <section>
+  <!-- Daftar Kategori Buku -->
+  <main class="book-list">
+    <!-- Kategori Favorite -->
+    <section class="book-category">
       <h2>Favorite</h2>
       <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <a href="/SINOPSIS/SINOPSIS.HTML"><img src="/IMG/BUKU3.png" alt=""></a>
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
+        <button class="nav prev">&#10094;</button>
+        <div class="carousel-track" id="favorite">
+          <img src="/BUKU/FAVORITE1.png" alt="Buku Favorite 1">
+          <img src="/BUKU/FAVORITE2.png" alt="Buku Favorite 2">
+          <img src="/BUKU/FAVORITE3.png" alt="Buku Favorite 3">
+          <img src="/BUKU/FAVORITE4.png" alt="Buku Favorite 4">
+          <img src="/BUKU/FAVORITE5.png" alt="Buku Favorite 5">
         </div>
-        <button class="next">›</button>
+        <button class="nav next">&#10095;</button>
+      </div>
+      <div class="carousel-indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
       </div>
     </section>
 
-    <!-- SEJARAH -->
-    <section>
+    <!-- Kategori Sejarah -->
+    <section class="book-category">
       <h2>Sejarah</h2>
       <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
+        <button class="nav prev">&#10094;</button>
+        <div class="carousel-track" id="sejarah">
+          <img src="/BUKU/SEJARAH1.png" alt="Buku Sejarah 1">
+          <img src="/BUKU/SEJARAH2.png" alt="Buku Sejarah 2">
+          <img src="/BUKU/SEJARAH3.png" alt="Buku Sejarah 3">
+          <img src="/BUKU/SEJARAH4.png" alt="Buku Sejarah 4">
+          <img src="/BUKU/SEJARAH1.png" alt="Buku Sejarah 1">
         </div>
-        <button class="next">›</button>
+        <button class="nav next">&#10095;</button>
       </div>
     </section>
 
-    <h2>Komik</h2>
+    <!-- Kategori Komik -->
+    <section class="book-category">
+      <h2>Komik</h2>
       <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
+        <button class="nav prev">&#10094;</button>
+        <div class="carousel-track" id="komik">
+          <img src="/BUKU/KOMIK1.png" alt="Komik 1">
+          <img src="/BUKU/KOMIK2.png" alt="Komik 2">
+          <img src="/BUKU/KOMIK3.png" alt="Komik 3">
+          <img src="/BUKU/KOMIK4.png" alt="Komik 4">
+          <img src="/BUKU/KOMIK5.png" alt="Komik 5">
         </div>
-        <button class="next">›</button>
+        <button class="nav next">&#10095;</button>
       </div>
     </section>
 
-    <h2>Sastra</h2>
+    <!-- Kategori Sastra -->
+    <section class="book-category">
+      <h2>Sastra</h2>
       <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
+        <button class="nav prev">&#10094;</button>
+        <div class="carousel-track" id="sastra">
+          <img src="/BUKU/SASTRA1.png" alt="Sastra 1">
+          <img src="/BUKU/SASTRA2.png" alt="Sastra 2">
+          <img src="/BUKU/SASTRA3.png" alt="Sastra 3">
+          <img src="/BUKU/SASTRA4.png" alt="Sastra 4">
+          <img src="/BUKU/SASTRA5.png" alt="Sastra 5">
         </div>
-        <button class="next">›</button>
+        <button class="nav next">&#10095;</button>
       </div>
     </section>
 
-    <h2>Fantasi</h2>
+    <!-- Kategori Fantasi -->
+    <section class="book-category">
+      <h2>Fantasi</h2>
       <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
+        <button class="nav prev">&#10094;</button>
+        <div class="carousel-track" id="fantasi">
+          <img src="/BUKU/FANTASI1.png" alt="Fantasi 1">
+          <img src="/BUKU/FANTASI2.png" alt="Fantasi 2">
+          <img src="/BUKU/FANTASI3.png" alt="Fantasi 3">
+          <img src="/BUKU/FANTASI4.png" alt="Fantasi 4">
+          <img src="/BUKU/FANTASI5.png" alt="Fantasi 5">
         </div>
-        <button class="next">›</button>
+        <button class="nav next">&#10095;</button>
       </div>
     </section>
-
-   <h2>Favorite</h2>
-      <div class="carousel">
-        <button class="prev">‹</button>
-        <div class="scroll-row">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU1.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-          <img src="/IMG/BUKU2.png" alt="">
-          <img src="/IMG/BUKU3.png" alt="">
-        </div>
-        <button class="next">›</button>
-      </div>
-    </section>
-
-    <!-- KOMIK, SASTRA, FANTASI => ulangi seperti di atas -->
-
-    <footer>
-      <a href="#">Hubungi Kami</a>
-      <a href="/TENTANG/TENTANG.HTML">Tentang Kami</a>
-      <a href="#">Kebijakan Privasi</a>
-    </footer>
   </main>
 
-  <script src="LIST.JS"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="#">Hubungi Kami</a>
+    <a href="#">Tentang Kami</a>
+    <a href="#">Kebijakan Privasi</a>
+  </footer>
+
+  <script src="LIST.js"></script>
 </body>
 </html>
