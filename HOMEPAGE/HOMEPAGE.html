@@ -6,6 +6,7 @@
     <title>HOOLibrary</title>
     <link rel="stylesheet" href="HOMEPAGE.CSS" />
   </head>
+  <script src="/HOMEPAGE//HOMEPAGE.js"></script>
   <body>
     <!-- Navbar -->
     <header>
@@ -13,13 +14,16 @@
         <img src="/IMG/LOGO.png" alt="HOOLibrary Logo">
         <span>HOOLibrary</span>
       </div>
-      <nav>
-        <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
-        <a href="/TENTANG/TENTANG.HTML">Tentang</a>
-        <a href="/INFORMASI/INFORMASI.HTML">Layanan</a>
-      </nav>
-      <div class="search">
-        <input type="text" placeholder="Cari disini..." class="search-box">
+    
+      <div class="nav-search">
+        <nav>
+          <a href="/HOMEPAGE/HOMEPAGE.html">Beranda</a>
+          <a href="/TENTANG/TENTANG.HTML">Tentang</a>
+          <a href="/INFORMASI/INFORMASI.HTML">Layanan</a>
+        </nav>
+        <div class="search">
+          <input type="text" placeholder="Cari disini..." class="search-box">
+        </div>
       </div>
     </header>
 
@@ -27,7 +31,9 @@
     <section class="banner">
       <div class="welcome">
         <div class="left-content">
-          <div class="icon-circle">📚</div>
+          <div class="icon-circle">
+            <img src="/IMG/LOGO.png" alt="HOOLibrary Logo" class="logo-banner" />
+          </div>
           <div class="welcome-text">
             <h1>Selamat datang!</h1>
             <p>Baca buku yang anda butuhkan disini!</p>
@@ -39,8 +45,10 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Baca Atau tinggalkan buku anda di HOOLibrary</h1>
-      <p>HOOLibrary Tempatnya Perpustakaan Terlengkap</p>
+      <h1 class="judul-hero">
+        Baca Atau tinggalkan buku<br />anda di HOOLibrary
+      </h1>
+      <p class="subjudul-hero">HOOLibrary Tempatnya Perpustakaan Terlengkap</p>
       <input
         type="text"
         placeholder="Cari Buku, Author dan Genre Favoritmu..."
